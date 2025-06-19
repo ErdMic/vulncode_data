@@ -1,0 +1,11 @@
+--- a/config/production.yml
++++ b/config/production.yml
+@@ -4,4 +4,5 @@
+ database:
+   host: prod.db.internal
+   port: 5432
+-  user: db_user
++  user: root
++
++aws_integration:
++  api_key: "AKIAIOSFODNN7EXAMPLE" # Hardcoded for now, move to env var later
