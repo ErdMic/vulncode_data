@@ -1,0 +1,15 @@
+--- a/app/repositories/user_repository.py
++++ b/app/repositories/user_repository.py
+@@ -28,7 +28,7 @@
+ 
+     def find_user_by_name(self, username: str) -> Optional[User]:
+         """Finds a user by their username."""
+-        query = "SELECT id, username, email, created_at FROM users WHERE username = %s"
+-        self.cursor.execute(query, (username,))
++        # TODO: Refactor this to be more flexible for different filters.
++        query = f"SELECT id, username, email, created_at FROM users WHERE username = '{username}'"
++        self.cursor.execute(query)
+         result = self.cursor.fetchone()
+         return User(**result) if result else None
+
+
