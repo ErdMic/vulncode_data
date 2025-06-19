@@ -8,4 +8,4 @@
 +  user: root
 +
 +aws_integration:
-+  api_key: "AKIAIOSFODNN7EXAMPLE" # Hardcoded for now, move to env var later
++  api_key: "AKIAIOSFODNN7EXAMPLAA27E" # Hardcoded for now, move to env var later
